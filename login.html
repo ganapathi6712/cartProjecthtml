@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="username" required autocomplete="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+        <div>
+            <button type="submit" onmouseover="om(this)" onmouseout="ou(this)" id="bnt" onclick="clickme()" >Login</button>
+            <p id="error-message"></p>
+        </div>
+        </form>
+       <div><p> Signup first <a href="signup.html">SignUp</a> here</p></div>
+    </div>
+   
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
